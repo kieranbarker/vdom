@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 88%;
+	max-width: 20em;
+	margin: 1em auto;
+	line-height: 1.5;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+[type="text"],
+button {
+	font: inherit;
+}
+
+[role="list"] {
+	padding: 0;
+	list-style: none;
+}
+
+.TaskForm label,
+.TaskForm input {
+	display: block;
+}
+
+.TaskForm input {
+	width: 100%;
+}
+
+.Task + * {
+	margin-top: 1em;
+}
+
+.Task :checked + * {
+	text-decoration: line-through;
+}
